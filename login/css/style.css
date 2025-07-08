@@ -1,0 +1,95 @@
+:root {
+    --primary-color: #2ec4b6; /* 青蓝色 */
+    --primary-dark: #20a198;
+    --light-color: #e8f7f6;
+    --white: #ffffff;
+    --gray: #f5f5f5;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--gray);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.login-container {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.logo {
+    color: var(--primary-color);
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.welcome-text {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.github-btn {
+    background-color: #24292e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.github-btn:hover {
+    background-color: #1a1e22;
+}
+
+.github-icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.divider {
+    margin: 30px 0;
+    position: relative;
+    height: 1px;
+    background-color: #eee;
+}
+
+.divider::before {
+    content: "或";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    padding: 0 15px;
+    color: #999;
+    font-size: 14px;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #999;
+}
+
+.footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
