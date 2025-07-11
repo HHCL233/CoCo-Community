@@ -63,6 +63,9 @@ ZIT-CoCo-Community官方链接（推荐）：https://cc.zitzhen.cn/
 | QiQi |<a href="https://github.com/Qiqi29"><img src="https://avatars.githubusercontent.com/u/112358908?v=4" width="50" height="50" alt="QiQi的图片"></a> | 13|
 | Inventocode |<a href="https://github.com/Inventocode"><img src="https://avatars.githubusercontent.com/u/138981212?v=4" width="50" height="50" alt="Inventocode的图片"></a> | 1|
 
+## Wikli
+我们会在Wikli更新贡献方法。
+[Wikli](https://github.com/zitzhen/CoCo-Community/wiki)
 
 ## 许可证
 本项目采用 [AGPL-3.0 许可证](LICENSE)，并附加以下条款：
