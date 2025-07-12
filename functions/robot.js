@@ -1,7 +1,16 @@
 export async function onRequest(context) {
   const { request, next } = context;
   const userAgent = request.headers.get('user-agent') || '';
+
+  const url = new URL(request.url);
   
+    if (url =="https://cc.zitzhen.cn" ||url == "https://cc.zitzhen.cn/")
+    {
+        const yeshome = true;
+    }  
+    // 使用正则获取最后一部分
+  const lastPart = url.pathname.match(/\/([^\/]+)\/?$/)?.[1] || '';
+
   // 常见爬虫的User-Agent列表（可根据需要扩展）
   const botUserAgents = [
     'googlebot',
