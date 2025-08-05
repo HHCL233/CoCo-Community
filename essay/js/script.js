@@ -18,7 +18,7 @@ async function fetch_information(name) {
 function add_essay(essay_name,url = "",author = "",release_date = ""){
   essay.innerHTML += `
     <div class="article-card">
-      <img src="${url}" alt="${essay_name}" class="article-thumbnail">
+      <img src="${url}" alt="${url}" class="article-thumbnail">
       <div class="article-content">
           <h3 class="article-title"><a href="all/${essay_name}">${essay_name}</a></h3>
           <div class="article-meta">
@@ -53,7 +53,9 @@ async function main() {
       if (name !== "example") {
         const information = await fetch_information(name);
         console.log(information);
-        add_essay(name);
+        let author = information.author;
+        let url = information.cover_url;
+        add_essay(name,url,author);
       }
 
     }
