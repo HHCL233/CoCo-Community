@@ -16,6 +16,23 @@ async function fetch_information(name) {
 }
 
 function add_essay(essay_name,url = "",author = "",release_date = ""){
+  if (!url){
+    essay.innerHTML += `
+      <div class="article-content">
+          <h3 class="article-title"><a href="all/${essay_name}">${essay_name}</a></h3>
+          <div class="article-meta">
+              <span class="article-meta-item"><i class="fas fa-user"></i>${author}</span>
+              <span class="article-meta-item"><i class="fas fa-calendar-alt"></i>${release_date}</span>
+              <span class="article-meta-item"><i class="fas fa-eye"></i> 正在加载</span>
+              <span class="article-meta-item"><i class="fas fa-comments"></i> 正在加载</span>
+          </div>
+          <p class="article-excerpt">
+              正在加载
+          </p>
+      </div>
+    </div>
+    `
+  }else{
   essay.innerHTML += `
     <div class="article-card">
       <img src="${url}" alt="${url}" class="article-thumbnail">
@@ -32,6 +49,7 @@ function add_essay(essay_name,url = "",author = "",release_date = ""){
           </p>
       </div>
     </div>`;
+}
 }
 
 async function main() {
