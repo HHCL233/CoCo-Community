@@ -8,7 +8,7 @@
 ![截屏2025-06-01 23.04.36.png](https://cc.zitzhen.cn/control/随机获取网易云音乐一首歌曲-LJT/images/1.png)
 
 ## 下载
-请点击ZIT-CoCo-Community上方的下载按钮
+作者未上传控件，不提供下载
 
 ---
 文档作者：垃圾桶  
